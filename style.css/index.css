@@ -9,6 +9,11 @@ h1 {
     font-size: 50px;
 }
 
+h2 {
+    font-style: italic;
+    color: rgb(255, 255, 255);
+}
+
 a {
     color: white;
     text-decoration: none;
@@ -18,5 +23,6 @@ a {
 
 header {
     padding-top: 60px;
-    padding-bottom: 60px;
+    /*padding-bottom: 60px;*/
 }
+
