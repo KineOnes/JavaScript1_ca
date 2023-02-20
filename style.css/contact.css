@@ -1,3 +1,23 @@
+main {
+width: 500px;
+}
+
+.form {
+    flex: 1;
+}
+
+.form_box {
+    display: grid;
+    text-align: center;
+    background: #9e48b9;
+    margin-bottom: 30px;
+}
+
+.flex-gap { 
+    display: inline-flex;
+    flex-wrap: wrap;
+}
+
 .submit_button {
     background-color: rgb(129, 116, 214);
     padding: 5px 5px;

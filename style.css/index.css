@@ -2,3 +2,12 @@ h1 {
     font-style: italic;
     color: darkslateblue;
 }
+
+.movies {
+    margin: 1rem;
+    padding: 1rem;
+    max-width: 300px;
+    background: rgb(168, 198, 252);
+    border: 4px solid rgb(77, 0, 128);
+    border-radius: 1rem;
+}
