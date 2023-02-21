@@ -23,6 +23,17 @@ a {
 
 header {
     padding-top: 60px;
-    /*padding-bottom: 60px;*/
+    
 }
 
+.container {
+    text-align: center;
+    display: flex;
+    gap: 10px;
+}
+
+.item {
+    text-align: center;
+    display: flex;
+    padding: 10px;
+}
