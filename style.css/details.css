@@ -12,3 +12,15 @@ img {
     border-radius: 1rem;
 }
 
+.movies {
+    text-align: center;
+    display: flex;
+    gap: 10px;
+}
+
+.item {
+    text-align: center;
+    display: flex;
+    padding: 10px;
+}
+

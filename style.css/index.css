@@ -11,7 +11,7 @@ h1 {
 
 h2 {
     font-style: italic;
-    color: rgb(255, 255, 255);
+    color: rgb(215, 34, 34);
 }
 
 a {
@@ -25,15 +25,7 @@ header {
     padding-top: 60px;
     
 }
-
-.container {
-    text-align: center;
-    display: flex;
-    gap: 10px;
-}
-
-.item {
-    text-align: center;
-    display: flex;
-    padding: 10px;
+main {
+    background-color: rgb(255, 255, 255);
+    padding: 5px;
 }
