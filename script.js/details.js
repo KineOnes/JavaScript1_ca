@@ -14,8 +14,9 @@ fetch('https://imdb8.p.rapidapi.com/auto-complete?q=breakfast', options)
         list.map((item) => {
             const name = item.l
             const year = item.y
+            const actors =item.s
             const image = item.i.imageUrl;
-            const movie = `<div class="result"><li><img src="${image}"> <h2>${name} (${year})</h2> </li></div>`
+            const movie = `<div class="result"><li><img src="${image}"> <h2>Title: ${name} Release year: ${year} Actors & actresses: ${actors}</h2> </li></div>`
             document.querySelector('.movies').innerHTML += movie;
         })
     })
