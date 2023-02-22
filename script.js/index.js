@@ -12,9 +12,11 @@ fetch('https://imdb8.p.rapidapi.com/auto-complete?q=breakfast', options)
         const list = data.d;
 
         list.map((item) => {
-            const name = item.l
-            const actors = item.s
-            const movie = `<div class="result"><li><img src="${image}"> <h2>${name} (${actors})</h2> </li></div>`
+
+            /*const name = item.l*/ /*Comment; not needed when Image with title is visible*/
+
+            const image = item.i.imageUrl;
+            const movie = `<div class="result"><li><img src="${image}"> <h2></h2> </li></div>`
             document.querySelector('.movies').innerHTML += movie;
         })
     })

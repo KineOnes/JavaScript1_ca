@@ -20,7 +20,7 @@ img {
 .movies {
     text-align: center;
     display: flex;
-    gap: 10px;
+    gap: 5px;
 }
 
 .item {
