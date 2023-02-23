@@ -6,28 +6,23 @@ body {
     color:rgb(172, 23, 23);
 }
 
-.form {
-    flex: 4;
-    text-align: center;
-}
-
-.form_box {
+.container {
     display: grid;
     text-align: center;
     background: #ffffff;
     margin-bottom: 30px;
     border: 4px solid rgb(255, 122, 122);
     border-radius: 1rem;
+    max-width: 400px;
+    padding: 30px;
 }
 
-.flex-gap { 
-    display: inline-flex;
-    flex-wrap: wrap;
-}
-
-.submit_button {
-    background-color: rgb(129, 116, 214);
-    padding: 5px 5px;
-    border-radius: 8px;
-    width: 120px;
+.item {
+    padding: 10px;
+    flex-direction: column;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    width:100%;
 }

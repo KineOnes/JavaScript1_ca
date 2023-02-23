@@ -20,23 +20,25 @@
     </header>
 
     <main>
-        <div class="flex_gap">
-            <form class="form_box">
-                <div class="message">
-                    <h2 class="red_title">Contact form</h2>
-                    <label for="name">Your name</label>
-                    <input id="name" type="text" name="name">
-                    <label for="subject">Subject (*minimum length of 10 characters)</label>
-                    <input id="subject" type="text" subject="subject">
-                    <label for="Email">Email</label>
-                    <input id="email" type="text" email="email">
-                    <label for="address">Adress (*minimum length of 25 characters)</label>
-                    <input id="adress" type="text" address="address">
-                <div class="submit-form">
-                    <input class="button" type="submit" value="Send">
-                </div>    
-                </div>
+        <div class="container">
+            <form>
+                <label class="item">Your name:
+                <input id= name placeholder="Name" type="text"></label>
 
+                <label class="item">Subject:
+                    <input id= subject placeholder="Subject" type="text"></label>
+
+                <label class="item">Email:
+                    <input id= email placeholder="Email" type="text"></label>
+                    
+                <label class="item">Address:
+                    <input id= address placeholder="Adress" type="text"></label>    
+
+                <div class="character-count">character count: <span>0</span></div>
+                
+                <div>
+                    <button type="submit" disabled>Send</button>
+                </div>
             </form>
         </div>
     </main>

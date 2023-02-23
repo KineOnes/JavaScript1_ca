@@ -1,15 +1,23 @@
-const queryString = document.location.search;
+const name = document.querySelector("name");
 
-console.log(queryString);
+const subject = document.querySelector("subject");
 
-const params = new URLSearchParams(queryString);
+const email = document.querySelector("email");
 
-console.log(params)
+const address = document.querySelector("address");
 
-const id = params.get("id");
+const submitButton = document.querySelector("submitButton");
 
-console.log(id)
+subject.onkeydown =function (event) {
+    console.log(event.target.value.length);
 
-const name = params.get("name");
+    const len = event.target.value.length;
 
-console.log(name)
+    characterCount.innerHTML = len;
+
+    if(len >= 10) {
+        submitButton.disabled = false;
+    } else {
+        submitButton.disabled = true;
+    }
+}
