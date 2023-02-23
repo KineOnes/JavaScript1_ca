@@ -1,12 +1,12 @@
-const name = document.querySelector("name");
+const name = document.getElementById("name");
 
-const subject = document.querySelector("subject");
+const subject = document.getElementById("subject");
 
-const email = document.querySelector("email");
+const email = document.getElementById("email");
 
-const address = document.querySelector("address");
+const address = document.getElementById("address");
 
-const submitButton = document.querySelector("submitButton");
+const submitButton = document.getElementById("submitButton");
 
 subject.onkeydown =function (event) {
     console.log(event.target.value.length);

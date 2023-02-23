@@ -6,15 +6,19 @@ body {
     color:rgb(172, 23, 23);
 }
 
+main {
+    margin-top: 30px;
+}
 .container {
     display: grid;
     text-align: center;
     background: #ffffff;
-    margin-bottom: 30px;
+    margin-top: 30px;
     border: 4px solid rgb(255, 122, 122);
     border-radius: 1rem;
     max-width: 400px;
     padding: 30px;
+    margin: auto;
 }
 
 .item {
