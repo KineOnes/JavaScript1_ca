@@ -6,13 +6,15 @@ const options = {
 	}
 };
 
+
+
 fetch('https://imdb8.p.rapidapi.com/auto-complete?q=breakfast', options)
 	.then(response => response.json())
     .then(data => {
         const list = data.d;
 
         list.map((item) => {
-            
+
             /*Comment; not needed when Image with title is visible*/
             /*const name = item.l*/ 
 

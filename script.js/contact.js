@@ -6,7 +6,11 @@ const email = document.getElementById("email");
 
 const address = document.getElementById("address");
 
-const submitButton = document.getElementById("submitButton");
+const submitButton = document.querySelector(".submitButton");
+
+submitButton.addEventListener("click", function () {
+    console.log("I'm a button");
+});
 
 subject.onkeydown =function (event) {
     console.log(event.target.value.length);

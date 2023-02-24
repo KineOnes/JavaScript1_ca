@@ -20,7 +20,10 @@ img {
 .movies {
     text-align: center;
     display: flex;
+    flex-wrap: wrap;
     gap: 5px;
+    max-width: 1150px;
+    margin:auto
 }
 
 .item {
