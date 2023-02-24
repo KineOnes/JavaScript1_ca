@@ -20,5 +20,5 @@ fetch('https://imdb8.p.rapidapi.com/auto-complete?q=breakfast', options)
             document.querySelector('.movies').innerHTML += movie;
         })
     })
-	.then(response => console.log(response))
+	.then(response => console.log(data))
 	.catch(err => console.error(err));
