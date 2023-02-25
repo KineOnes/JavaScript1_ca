@@ -2,6 +2,8 @@ const queryString = document.location.search;
 const params = new URLSearchParams(queryString);
 const url = 'https://imdb8.p.rapidapi.com/title/get-overview-details?tconst=' + params.get("id");
 
+document.title = params.get("id");
+
 const options = {
 	method: 'GET',
 	headers: {
