@@ -23,7 +23,7 @@ fetch('https://imdb8.p.rapidapi.com/auto-complete?q=breakfast', options)
         document.querySelector('.movies').innerHTML = "";
 
         movies.map((movie) => {
-            const movieHTML = `<div class="result">
+            const movieHTML = `<div class="moviePoster">
                                 <li><a href="details.html?id=${movie.id}">
                                     <img src="${movie.i.imageUrl}"> <h2>${movie.l} <br> ${movie.y}</h2>
                                 </a></li>
