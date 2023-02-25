@@ -14,13 +14,13 @@ fetch('https://imdb8.p.rapidapi.com/auto-complete?q=breakfast', options)
         return response.json();
     })
     .then((data) => {
-        const list = data.d;
+        const movies = data.d;
 
-        if (typeof list !== 'object') {
+        if (typeof movies !== 'object') {
             throw new Error("list is undefined")
         } 
 
-        list.map((movie) => {
+        movies.map((movie) => {
             const movieHTML = `<div class="result">
                                 <li><a href="details.html?id=${movie.id}">
                                     <img src="${movie.i.imageUrl}"> <h2>${movie.l}</h2>
