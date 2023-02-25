@@ -10,6 +10,8 @@ const options = {
 	}
 };
 
+document.querySelector('.movies').innerHTML = `<div class="loader"> <h1>Loading...</h1></div>`;
+
 fetch(url , options)
 	.then(response => {
         if (response.status !== 200) throw new Error("Error in the API response")
@@ -28,6 +30,7 @@ fetch(url , options)
                             <h2>Title: ${title} Release year: ${year}</h2>
                             <p>${plot}</p>
                        </div>`;
-        document.querySelector('.movies').innerHTML += movieHTML;
+
+        document.querySelector('.movies').innerHTML = movieHTML;
     })
 	.catch(err => console.error(err));

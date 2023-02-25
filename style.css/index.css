@@ -29,3 +29,7 @@ li {
     list-style-type: none;
   }
 
+.loader {
+    color: rgb(103, 0, 0);
+    font-size: 2rem;
+}

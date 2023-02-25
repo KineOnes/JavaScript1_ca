@@ -38,7 +38,7 @@ main {
 }
 
 .validatedMessage {
-    /*display: none;*/
+    display: none;
     color: white;
     font-size: 2rem;
     background-color: green;

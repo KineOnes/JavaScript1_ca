@@ -6,7 +6,7 @@ const options = {
 	}
 };
 
-const movieElement = document.querySelector('.movies').innerHTML;
+document.querySelector('.movies').innerHTML = `<div class="loader"> <h1>Loading...</h1></div>`;
 
 fetch('https://imdb8.p.rapidapi.com/auto-complete?q=breakfast', options)
 	.then((response) => {
@@ -18,7 +18,9 @@ fetch('https://imdb8.p.rapidapi.com/auto-complete?q=breakfast', options)
 
         if (typeof movies !== 'object') {
             throw new Error("list is undefined")
-        } 
+        }
+
+        document.querySelector('.movies').innerHTML = "";
 
         movies.map((movie) => {
             const movieHTML = `<div class="result">
