@@ -2,8 +2,6 @@ const queryString = document.location.search;
 const params = new URLSearchParams(queryString);
 const url = 'https://imdb8.p.rapidapi.com/title/get-overview-details?tconst=' + params.get("id");
 
-document.title = params.get("id");
-
 const options = {
 	method: 'GET',
 	headers: {
@@ -22,6 +20,9 @@ fetch(url , options)
         const image = movie.title.image.url;
         const year = movie.title.year;
         const plot = movie.plotSummary.text;
+
+        document.title = `${title}`;
+
         const movieHTML = `<div class="result">
                             <img src="${image}">
                             <h2>Title: ${title} Release year: ${year}</h2>
