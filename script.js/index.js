@@ -26,8 +26,7 @@ fetch('https://imdb8.p.rapidapi.com/auto-complete?q=breakfast', options)
                                     <img src="${movie.i.imageUrl}"> <h2>${movie.l} <br> ${movie.y}</h2>
                                 </a></li>
                             </div>`;
-            /*movieElement = '';
-            movieElement += movie;*/
+        
             document.querySelector('.movies').innerHTML += movieHTML;
         })
     })
