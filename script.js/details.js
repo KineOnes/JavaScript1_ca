@@ -28,7 +28,7 @@ fetch(url , options)
         const movieHTML = `<h2 class="movieTitle">"${title}" Release year: ${year}</h2>
                            <div class="result">
                             <img src="${image}">
-                            <h3>Plot summary</h3>
+                            
                             <p>${plot}</p>
                        </div>`;
 
