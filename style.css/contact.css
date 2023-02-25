@@ -30,3 +30,9 @@ main {
     align-items:center;
     width:100%;
 }
+
+.error-input {
+    display: none;
+    color: red;
+    font-size: 1rem;
+}
