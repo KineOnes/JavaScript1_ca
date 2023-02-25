@@ -36,3 +36,12 @@ main {
     color: red;
     font-size: 1rem;
 }
+
+.validatedMessage {
+    display: none;
+    color: white;
+    font-size: 2rem;
+    background-color: green;
+    padding: 6px;
+    border-radius: 1rem;
+}
