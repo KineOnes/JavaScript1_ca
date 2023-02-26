@@ -3,7 +3,7 @@
 The API used in this CA:
 https://rapidapi.com/apidojo/api/online-movie-database/
 
-BRIED (Copied from CA text on Moodle)
+BRIEF (Copied from CA text on Moodle)
 "Find an API
 Search for a public, free-to-use API.
 
