@@ -18,4 +18,4 @@ There are many free APIs discoverable by a Google search.
 You may not use the APIs used in the lessons."
 
 LINK TO NETLIFY: https://resonant-puppy-5fffed.netlify.app/
-LINK TO MY REPO:
+LINK TO MY REPO: https://github.com/KineOnes/JavaScript1_ca.git
