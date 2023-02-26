@@ -13,8 +13,12 @@ const address = document.getElementById("address");
 const addressError = document.getElementById("addressError");
 
 const submitButton = document.querySelector(".submitButton");
+/* const submitButtonError = document.querySelector(".submitButtonError"); */
 
 const validatedMessage = document.querySelector(".validatedMessage");
+
+const success = getElementById('success'); /*success message when form subit*/
+/* success.style.display = 'block'; PUT THIS IN A FUNCTION?*/ 
 
 function validateEmail(email) {
     const regEx = /\S+@\S+\.\S+/;
@@ -49,6 +53,9 @@ function validateForm(event) {
         emailError.style.display = "block";
     }
 
+
+    
+
 }
 
 form.addEventListener("submit", validateForm)
@@ -59,11 +66,17 @@ function checkLength(value, len) {
     } else {
         return false;
     }
+    
+    
 }
 
 form.onsubmit =function (event) {
     event.preventDefault();
+    
+    
 }
+
+
 
 /*submitButton.addEventListener("click", function () {
 });
