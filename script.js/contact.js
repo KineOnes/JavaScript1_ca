@@ -13,12 +13,9 @@ const address = document.getElementById("address");
 const addressError = document.getElementById("addressError");
 
 const submitButton = document.querySelector(".submitButton");
-/* const submitButtonError = document.querySelector(".submitButtonError"); */
 
 const success = document.querySelector(".success");
 
-/*const success = getElementById('success'); /*success message when form subit*/
-/* success.style.display = 'block'; PUT THIS IN A FUNCTION?*/ 
 
 function validateEmail(email) {
     const regEx = /\S+@\S+\.\S+/;
@@ -78,25 +75,3 @@ function checkLength(value, len) {
 form.onsubmit = function (event) {
     event.preventDefault();
 }
-
-
-
-/*submitButton.addEventListener("click", function () {
-});
-
-    if(len >= 10) {
-        submitButton.disabled = false;
-    } else {
-        submitButton.disabled = true;
-    }*/
-
-
-/* No need for the viewer to see typed length of characters */
-/*subject.onkeydown =function (event) {
-    console.log(event.target.value.length);
-
-    const len = event.target.value.length;
-
-    characterCount.innerHTML = len; 
-
-}*/
