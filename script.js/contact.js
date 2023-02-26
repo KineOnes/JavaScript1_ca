@@ -15,9 +15,9 @@ const addressError = document.getElementById("addressError");
 const submitButton = document.querySelector(".submitButton");
 /* const submitButtonError = document.querySelector(".submitButtonError"); */
 
-const validatedMessage = document.querySelector(".validatedMessage");
+const success = document.querySelector(".success");
 
-const success = getElementById('success'); /*success message when form subit*/
+/*const success = getElementById('success'); /*success message when form subit*/
 /* success.style.display = 'block'; PUT THIS IN A FUNCTION?*/ 
 
 function validateEmail(email) {
@@ -28,34 +28,41 @@ function validateEmail(email) {
 
 function validateForm(event) {
     event.preventDefault();
+    let formError = false;
 
     if(checkLength(firstName.value, 0) ) {
         firstNameError.style.display = "none";
     } else {
         firstNameError.style.display = "block";
+        formError = true;
     }
 
     if(checkLength(subject.value, 10) ) {
         subjectError.style.display = "none";
     } else {
         subjectError.style.display = "block";
+        formError = true;
     }
 
     if(checkLength(address.value, 25 ) ) {
         addressError.style.display = "none";
     } else {
         addressError.style.display = "block";
+        formError = true;
     }
 
     if(validateEmail(email.value) ) {
         emailError.style.display = "none";
     } else {
         emailError.style.display = "block";
+        formError = true;
     }
 
-
-    
-
+    if (formError) {
+        success.style.display = "none";
+    } else {
+        success.style.display = "block";
+    }
 }
 
 form.addEventListener("submit", validateForm)
@@ -66,14 +73,10 @@ function checkLength(value, len) {
     } else {
         return false;
     }
-    
-    
 }
 
-form.onsubmit =function (event) {
+form.onsubmit = function (event) {
     event.preventDefault();
-    
-    
 }
 
 
